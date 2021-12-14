@@ -8,7 +8,7 @@ Recueil des projets du cours synthèse en technique d'intégration expérience i
 ### utiliser submodule 
 
 ```
-git submodule add https://github.com/tim-montmorency/66B-modele_de_projet.git projets/66B-modele_de_projet
+git submodule add git@github.com:tim-montmorency/66B-modele_de_projet.git projets/66B-modele_de_projet
 ```
 
 ### Mettre à jour 
