@@ -16,3 +16,6 @@
 [submodule "projets/L-horloge-de-l-apocalypse"]
 	path = projets/L-horloge-de-l-apocalypse
 	url = https://github.com/MALT5/L-horloge-de-l-apocalypse
+[submodule "projets/temporel"]
+	path = projets/temporel
+	url = https://github.com/noo-name/temporel
