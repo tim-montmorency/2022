@@ -1,9 +1,6 @@
 [submodule "projets/66B-modele_de_projet"]
 	path = projets/66B-modele_de_projet
 	url = https://github.com/tim-montmorency/66B-modele_de_projet.git
-[submodule "projets/temps"]
-	path = projets/temps
-	url = https://github.com/task-tim/temps
 [submodule "projets/Temporalis"]
 	path = projets/Temporalis
 	url = https://github.com/Orbital3/Temporalis
@@ -16,3 +13,9 @@
 [submodule "projets/L-horloge-de-l-apocalypse"]
 	path = projets/L-horloge-de-l-apocalypse
 	url = https://github.com/MALT5/L-horloge-de-l-apocalypse
+[submodule "projets/temps"]
+	path = projets/temps
+	url = https://github.com/task-tim/temps/
+[submodule "projets/temporel"]
+	path = projets/temporel
+	url = https://github.com/noo-name/temporel
