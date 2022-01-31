@@ -781,7 +781,8 @@
 }
 
 .markdown-body img {
-	max-width: 100%;
+	width: 100%;
+	max-width: 720px;
 	box-sizing: initial;
 	background-color: #fff
 }
