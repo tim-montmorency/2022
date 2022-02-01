@@ -19,3 +19,6 @@
 [submodule "projets/temporel"]
 	path = projets/temporel
 	url = https://github.com/noo-name/temporel
+[submodule "projets/Distorsion-collective"]
+	path = projets/Distorsion-collective
+	url = https://github.com/Freakout-Programs/Distorsion-collective.git
