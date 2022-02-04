@@ -25,3 +25,6 @@
 [submodule "projets/3-minutes"]
 	path = projets/3-minutes
 	url = https://github.com/noo-name/3-minutes
+[submodule "projets/Chere-Sasha"]
+	path = projets/Chere-Sasha
+	url = https://github.com/task-tim/Chere-Sasha
