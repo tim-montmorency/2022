@@ -22,3 +22,6 @@
 [submodule "projets/Distorsion-collective"]
 	path = projets/Distorsion-collective
 	url = https://github.com/Freakout-Programs/Distorsion-collective.git
+[submodule "projets/3-minutes"]
+	path = projets/3-minutes
+	url = https://github.com/noo-name/3-minutes
