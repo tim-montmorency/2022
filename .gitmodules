@@ -19,3 +19,6 @@
 [submodule "projets/Jeu-Temporel"]
 	path = projets/Jeu-Temporel
 	url = https://github.com/Orbital3/Jeu-Temporel.git
+[submodule "projets/Chronaufrage"]
+	path = projets/Chronaufrage
+	url = https://github.com/Blobduckies/Chronaufrage
