@@ -1,382 +1,214 @@
 /* STRUCTURE GÉNÉRALE */
+:root {
+    --font-regular: "Quicksand", sans-serif;
+    --font-heading: "Montserrat", sans-serif;
+    --white-dark: #e0e0e0;
+    --black-off: #111;
+    --black-dark: #0e0e0e;
+    --red-light: #ff3363;
+    --red: #ff003a;
+    --color: var(--black-off);
+    --background: #fff;
+    --background-off: #f4f4f4;
+    --highlight: var(--red-light);
+    --spacer: 15px;
+    --section-spacer: 40px;
+    --width: 375px;
+    --grid-color: red;
+    --grid-size: 100px;
+    --grid-blur : 0px;
+}
 
-body{
+html{
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+}
+
+body {
     margin: 0;
-    background: url('medias/arriere_plan_full.jpg') no-repeat 0 0 black;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: var(--black-off);
+    font-family: var(--font-regular);
+    font-weight: 300;
+    min-height: 100vh;
+    position: relative;
 }
-#page{
-    overflow:hidden;
 
+.grille-bg{
+    background-image: url(medias/arriere_plan_full_2022.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    min-height: 201px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 115px;
+    left: 0;
+    right: 0;
 }
-header, main, footer{
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Newsreader', serif;  
-    background-color: rgba(0,0,0,0.4);
+
+header, main, footer {
     color: white;
 }
+
 section {
     padding: 10px 40px 20px 40px;
 }
 
-header{
-    font-family: 'Permanent Marker', cursive;
+header {
+    font-family: var(--font-heading);
     text-align: center;
     color: white;
     display: flex;
     justify-content: center;
-    background-color: rgba(0,0,0,0.2);
-    position: relative;
+    align-items: center;
+    position: relative; 
 }
-header .inner{
-    text-align: left;
-    padding: 50px 0; 
-    overflow: hidden;
+
+.home header{
+    min-height: 300px;
 }
+
+header>div{
+    max-width: 600px;
+}
+
+
 body a,
-header a,
-.presentation_generale a{
+header a{
     color: white;
 }
 
 /* CONTENU ENTÊTE (HEADER) */
-
-h1{
-    font-size: 80px; 
+h1 {
+    font-size: 80px;
     font-weight: 400;
     margin: 0 0 13px 0;
     text-align: center;
+    font-family: var(--font-heading);
 }
-@media screen and (max-width: 799px) {
-    h1{
-        font-size: 2em;
-        font-size: 14vw; 
+
+h1 a, header a {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 800;
+}
+
+@media (min-width: 992px) {
+    .site-logo .logo-tim {
+        height: 80px;
     }
 }
 
-h1, h2{
-    font-family: 'Permanent Marker', cursive;
+.site-logo .logo-tim {
+    height: 40px;
+}
+
+.logo-tim {
+    display: block;
+    fill: var(--highlight);
+    transition: fill 1s;
+    display: inline-block;
+    width: 250px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
     color: white;
     font-weight: 400;
 }
 
-a#logo_pandeme{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 0 20px;
-    background: url('medias/logo_arriere_noir.svg') no-repeat 0 10px;
-    width:auto; 
-    margin: 0px auto;
-    background-size: contain;
-}
-
-ul#info_evenement{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 20px;
-    font-size: 15px;
-}
-
-ul#info_evenement li{
-    margin: 0;
-    padding: 5px 0;
-}
-
-@media screen and (min-width: 390px) {
-    ul#info_evenement li.f-interactif{
-        padding: 4px 0 4px 50px;
-        background: url("medias/fleche_interactif_blanche.svg") no-repeat 0 0;
-    }
-    ul#info_evenement li.f-diffusion{
-        padding: 4px 0 4px 50px;
-        background: url("medias/fleche_diffusion_blanche.svg") no-repeat 6px 7px;
-    }
-}
-
-.spotlight{
-    display: none;
-}
-
-@media screen and (min-width: 600px) {
-    
-    ul#info_evenement{
-        font-size: 16px;
-    }
-
-    .spotlight{ 
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: -30px;
-    }
-
-    .spotlight_g{
-        left: -90px;
-        margin-left: 0;
-        top: -60px;  
-    }
-
-    .spotlight_m{
-        right: -280px;
-        margin-left: 0;
-        top: -80px;  
-    }
-
-    .spotlight_d{
-        right: -277px;
-        top: -60px;  
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .spotlight_g{
-        left: 50%;
-        margin-left: -850px;
-        top: -30px;
-    }
-    .spotlight_m{
-        right: -80px;
-    }
-    .spotlight_d{
-        display: block;
-    }
-    
-}
 
 /* SECTION PRÉSENTATION DES PROJETS */
-
-.presentation_projets {
-    text-align: center;
-    background-color: #3E484F;
-    padding: 10px 5px 0px 5px;
-    position: relative;
-}
-
-.presentation_projets h2{
-    text-align: center;
-    margin: 0px 0px 0px 12px;
-    line-height: 1;
-    display: none;
-}
-
-.presentation_projets .projet {
+.projet{
     position: relative;
     display: block;
-    padding: 8px 6px 6px 6px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 550px;
-    margin: 0 auto 32px auto;
+    border: 2px solid var(--red);
+    transition: all 0.5s ease;
 }
-.container_projets .projet img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
+a.projet{
+    color: white;
+    text-decoration: none;
+}
+a.projet:hover{
+    color: white;
+    border-color: white;
+}
+a.projet img{
     filter: grayscale(60%);
 }
-a.projet:hover img {
+a.projet img:hover{
     filter: grayscale(0%);
 }
-
-.desc_projet {
-    position: absolute;
-    left: 6px;
-    right: 6px;
-    bottom: -24px;
-    background-color: #502927;
-    padding: 8px 3px 6px 3px;
-    transition: background-color 0.5s;
-}
-
-a.projet:hover .desc_projet {
-    background-color:#A23A35;
-}
-
-.desc_projet h4 {
-    margin: 0;
-}
-
-.presentation_projets a {
-    color: white;
-}
-.presentation_projets a:link, a:visited {
-    color: white;
-}
-.presentation_projets a:hover, a:active {
-    color:white;
-}
-
-@media screen and (min-width: 1240px) {
-   
-    .presentation_projets {
-        margin: 0 -20px;
-    }
-
-    .presentation_projets:after{
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-right-width: 0px;
-        border-left-width: 20px;
-        border-bottom: 14px solid #2F363B;
-        position: absolute;
-        top: -14px;
-        left: 0;
-    }
-    .presentation_projets:before{
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-bottom-width: 0px;
-        border-top-width: 14px;
-        border-left: 20px solid #2F363B;
-        position: absolute;
-        top: -14px;
-        right: 0;
-    }
-
-    .container_projets .projet {
-        flex: 1 1 0px;
-        transition: transform 500ms;
-    }
-
-    .container_projets:focus-within .projet,
-    .container_projets:hover .projet {
-        transform: translateX(-25%);
-    }
-
-    .container_projets .projet:focus ~ .projet,
-    .container_projets :hover ~ .projet {
-        transform: translateX(25%);
-    }
-
-    .container_projets .projet:focus,
-    .container_projets .projet:hover {
-        transform: scale(1.5);
-        z-index: 1;
-    }
-
-}
-
-@media screen and (min-width: 500px) {
-    .presentation_projets h2{
-        text-align: left;
-        display: block;
-        margin: 30px 15px
-    }
-    .container_projets {
-        display: flex;
-        flex-wrap: wrap;
-    }   
-
-    .presentation_projets .projet {
-       width: 50%;
-    }   
-}
-
-
-
-
-/* SECTION PRÉSENTATION GÉNÉRALE */
-
-h3{
-    margin-top: 70px;
-}
-
-.presentation_generale {
-    text-align: left;
-    padding: 40px 80px;
-    font-size: 15px;
-    line-height: 25px;
-}
-
-.pan-demo-definition{
+.desc_projet{
     text-align: center;
-    margin: 30px 0 0 0;
+    vertical-align: middle;
+    background-color: var(--red);
+    width: 100%;
+    transition: all 0.5s ease;
 }
 
-.pan-demo-definition img{
-    width: 170px;
+a.projet:hover .desc_projet{
+    background-color: white;
 }
 
-.container_cols {
-    display: flex;
-    justify-content: space-between;
-}
-.container_cols.reverse{
-    flex-direction: row-reverse;
-}
-
-.col{
-    width: 48%;
-}
-.btns_evenement {
-    display: flex;
-    justify-content: center;
+.projet h2{
+    padding: 10px 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.3s ease;
 }
 
-
-@media screen and (max-width: 992px) {
-    .presentation_generale {
-        text-align: left;
-        padding: 40px 30px;
-    }
-    .container_cols {
-        display: block;
-        
-    }
-    .btns_evenement {
-        display: block;
-        margin: 60px 0;
-    }
-    .col{
-        width: 100%;
-    }
+a.projet:hover h2{
+    color: var(--red);
 }
 
 
 /* PIED DE PAGE (FOOTER) */
 footer {
     text-align: center;
-    padding: 30px 20px 15px 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     box-sizing: border-box;
-    color: rgba(255,255,255,0.4);
+    color:  var(--highlight);
+    border-top: 1px solid var(--highlight);
+    margin-top: 100px;
+    min-height: 100px;
+    background: --black-dark;
+    font-weight: 400;
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    color: rgba(255,255,255,0.4);
-}
-footer a:hover{
-    color: rgba(255,255,255,1);
+    color:  var(--highlight);
 }
 
-a.btn{
+footer a:hover {
+    color: white;
+}
+
+
+/* BOUTONS */
+a.btn {
     display: block;
-    padding: 18px 20px 15px 20px; 
+    padding: 18px 20px 15px 20px;
     border-radius: 3px;
     font-weight: 600;
     text-decoration: none;
     background-color: #ffffff;
     color: #213337;
+    margin-bottom: 5px;
 }
+
 @media screen and (min-width: 901px) and (max-width: 992px) {
-    a.btn{
+    a.btn {
         max-width: 500px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    a.btn{
+    a.btn {
         max-width: 100%;
     }
 }
@@ -390,27 +222,28 @@ a.btn:visited,
 .presentation_projet a.btn:link,
 .presentation_projet a.btn:active,
 .presentation_projet a.btn:hover,
-.presentation_projet a.btn:visited{
+.presentation_projet a.btn:visited {
     background-color: #ffffff;
     color: #213337;
     transition: all 200ms;
+    max-width: 600px
 }
 
 a.btn:hover,
-.presentation_projet a.btn:hover{
-    background-color: #502927;
+.presentation_projet a.btn:hover {
+    background-color: var(--red);
     color: #ffffff;
 }
 
 a.btn.btn-disabled,
-.presentation_projet a.btn.btn-disabled{
-    opacity:0.2;
+.presentation_projet a.btn.btn-disabled {
+    opacity: 0.2;
     pointer-events: none;
     cursor: default;
 }
 
 a.btn.btn-disabled:hover,
-.presentation_projet a.btn.btn-disabled:hover{
+.presentation_projet a.btn.btn-disabled:hover {
     background-color: #ffffff;
     color: #213337;
 }
