@@ -29,7 +29,6 @@ body {
     background-color: var(--black-off);
     font-family: var(--font-regular);
     font-weight: 300;
-    min-height: 100vh;
     position: relative;
 }
 
