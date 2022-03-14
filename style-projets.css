@@ -29,6 +29,7 @@ body {
     margin: 0;
     background-color: var(--black-off);
     font-family: var(--font-regular);
+    min-height: 100vh;
     position: relative;
 
 }
