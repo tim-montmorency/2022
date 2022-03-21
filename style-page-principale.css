@@ -37,11 +37,12 @@ body {
     background-image: url(medias/arriere_plan_full_2022.png);
     background-repeat: no-repeat;
     background-position: 50% 100%;
+    background-size: cover;
     min-height: 201px;
     width: 100%;
     position: absolute;
     z-index: -1;
-    bottom: 115px;
+    bottom: 100px;
     left: 0;
     right: 0;
 }
