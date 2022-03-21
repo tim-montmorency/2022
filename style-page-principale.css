@@ -69,11 +69,6 @@ header {
     min-height: 300px;
 }
 
-header>div{
-    max-width: 600px;
-}
-
-
 body a,
 header a{
     color: white;
