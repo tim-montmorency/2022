@@ -102,6 +102,7 @@ section.hero{
 }
 
 main h1{
+    padding: 60px 0 0 0;
     font-size: 40px;
     text-align: left;
 }
@@ -143,6 +144,10 @@ main h1{
     line-height: 25px; 
 }
 
+.presentation_projet .col{
+    margin-top: 60px;
+}
+
 .presentation_projet a:link, a:visited {
     color: white;
 }
@@ -175,7 +180,6 @@ ul.photos_finissants li{
 
 }
 
-
 .photos_finissants img {
     width: 100%;
     max-width: 80px;
@@ -185,16 +189,16 @@ ul.photos_finissants li{
     margin: 0 auto 8px;
 }
 
+.galerie_projet{
+    margin-top: 20px;
+}
+
 .gallery{
     display: flex;
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 900px) {
-    .gallery{
-        justify-content: center;
-    }
-}
+
 .gallery a{
     display: block;
     margin: 3px;
@@ -211,6 +215,7 @@ ul.photos_finissants li{
 /* JOURNAL DE CRÉATION */
 .journal_creation {
     margin: 0;
+    max-width: 880px;
 }
 .journal_creation img{
     width: 100%;
