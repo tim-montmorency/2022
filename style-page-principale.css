@@ -51,6 +51,10 @@ header, main, footer {
     color: white;
 }
 
+main{
+    padding-bottom: 120px;
+}
+
 section {
     padding: 10px 40px 20px 40px;
 }
@@ -66,7 +70,8 @@ header {
 }
 
 .home header{
-    min-height: 300px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
 }
 
 body a,
@@ -81,12 +86,26 @@ h1 {
     margin: 0 0 13px 0;
     text-align: center;
     font-family: var(--font-heading);
+    margin-bottom: 30px;
 }
 
 h1 a, header a {
     text-decoration: none;
     font-family: var(--font-heading);
+    
+}
+
+h1 .nom-evenement{
     font-weight: 800;
+    font-size: 11vw;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    h1 .nom-evenement{
+        font-size: 80px;
+        display: inline;
+    }
 }
 
 @media (min-width: 992px) {
